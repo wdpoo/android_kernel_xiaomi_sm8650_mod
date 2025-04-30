@@ -227,7 +227,7 @@ jobs:
           
           # 生成设备配置
           echo "🔧 Generating ${DEVICE} configuration... (正在生成 ${DEVICE} 的配置)"
-          make $MAKE_ARGS -j$(nproc --all) $defconfig
+          make $MAKE_ARGS -j$(nproc --all) ${DEVICE}_defconfig
           
           # 开启一些附加优化配置
           echo "🔧 Applying basic optimized configurations... (应用基本优化配置)"
